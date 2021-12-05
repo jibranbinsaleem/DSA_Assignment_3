@@ -20,9 +20,8 @@ ExpressionTree::ExpressionTree(ExpTreeNodePtr data)
 }
 ExpressionTree::~ExpressionTree()
 {
-
+    BinaryTree::make_empty();
 }
-
 void ExpressionTree::create_expression_tree(string expression)
 {
 
@@ -40,6 +39,7 @@ void ExpressionTree::create_expression_tree(string expression)
             new1->element = s;
             new1->left = NULL;
             new1->right = NULL;
+//            cout<<new1->element;
             top.push(new1);
         }
         else
@@ -53,11 +53,14 @@ void ExpressionTree::create_expression_tree(string expression)
             new1->element = s;
             new1->left = p2;
             new1->right = p1;
+//            cout<<new1->left;
             top.push(new1);
 
         }
         s = expression[i];
     }
+    tree_root = new1;
+
 }
 
 bool ExpressionTree::is_operator(char ch)
