@@ -7,13 +7,13 @@ using namespace std;
 template <class Comparable>
 void traverse_tree(BinaryTree<Comparable> * tree);
 void test_binary_tree();
-void test_expression_tree();
-void test_binary_search_tree();
+//void test_expression_tree();
+//void test_binary_search_tree();
 int main()
 {
 	test_binary_tree();
-	test_expression_tree();
-	test_binary_search_tree();
+//	test_expression_tree();
+//	test_binary_search_tree();
 	return 0;
 }
 void test_binary_tree()
@@ -34,24 +34,24 @@ void test_binary_tree()
 	traverse_tree(&tr3);
 	cout<<endl;
 }
-void test_expression_tree()
-{
-	cout<<"\nTesting Expression Tree"<<endl;
-	string expression = "762*+6+5-";
-	ExpressionTree expTree = ExpressionTree();
-	expTree.create_expression_tree(expression);
-	traverse_tree(&expTree);
-	cout<<endl;
-}
-void test_binary_search_tree()
-{
-	cout<<"\nTesting Binary Search Tree"<<endl;
-	BST<double> myBST;
-	double numbers[] = {7, 9, 13, 6, 4, 2, 5, 8, 1, 10, 3, 11, 12};
-	for(int i=0; i<13; i++)
-		myBST.insert(numbers[i]);
-	traverse_tree(&myBST);
-}
+//void test_expression_tree()
+//{
+//	cout<<"\nTesting Expression Tree"<<endl;
+//	string expression = "762*+6+5-";
+//	ExpressionTree expTree = ExpressionTree();
+//	expTree.create_expression_tree(expression);
+//	traverse_tree(&expTree);
+//	cout<<endl;
+//}
+//void test_binary_search_tree()
+//{
+//	cout<<"\nTesting Binary Search Tree"<<endl;
+//	BST<double> myBST;
+//	double numbers[] = {7, 9, 13, 6, 4, 2, 5, 8, 1, 10, 3, 11, 12};
+//	for(int i=0; i<13; i++)
+//		myBST.insert(numbers[i]);
+//	traverse_tree(&myBST);
+//}
 template <class Comparable>
 void traverse_tree(BinaryTree<Comparable> * tree)
 {

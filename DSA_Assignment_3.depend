@@ -1,0 +1,23 @@
+# depslib dependency file v1.0
+1638703892 source:c:\users\jibra\projects\dsa_assignment_3\src\binarytree.cpp
+	"BinaryTree.h"
+
+1638699971 c:\users\jibra\projects\dsa_assignment_3\include\binarytree.h
+	<iostream>
+	<queue>
+
+1638704534 source:c:\users\jibra\projects\dsa_assignment_3\src\bst.cpp
+
+1638704534 source:c:\users\jibra\projects\dsa_assignment_3\src\expressiontree.cpp
+
+1638704548 source:c:\users\jibra\projects\dsa_assignment_3\main.cpp
+	<string>
+	<iostream>
+	"BST.h"
+	"BinaryTree.h"
+	"ExpressionTree.h"
+
+1638704534 c:\users\jibra\projects\dsa_assignment_3\include\bst.h
+
+1638704534 c:\users\jibra\projects\dsa_assignment_3\include\expressiontree.h
+
