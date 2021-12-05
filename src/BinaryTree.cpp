@@ -103,7 +103,7 @@ BinaryNode<Comparable>* BinaryTree<Comparable>::create_node(Comparable x)
     BinaryNode<Comparable> *NewNode;
     NewNode = new BinaryNode<Comparable>;
     NewNode->element=x;
-    NewNode->left = NEWNode->right = NULL;
+    NewNode->left = NewNode->right = NULL;
     return NewNode;
 }
 //____________________________________________
