@@ -109,7 +109,10 @@ bool BST<Comparable>:: search(const Comparable data)
 }
 
 template <class Comparable>
+
+
 bool BST<Comparable>:: contains(const Comparable x, BinaryNode<Comparable>* tr)
+
 {
     if( tr == nullptr )
         return false;
