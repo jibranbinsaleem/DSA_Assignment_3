@@ -8,20 +8,21 @@
 
 1638704534 source:c:\users\jibra\projects\dsa_assignment_3\src\bst.cpp
 
-1638712232 source:c:\users\jibra\projects\dsa_assignment_3\src\expressiontree.cpp
+1638713017 source:c:\users\jibra\projects\dsa_assignment_3\src\expressiontree.cpp
 	"BinaryTree.h"
 	<string>
 	<stack>
 	"ExpressionTree.h"
 
-1638712263 source:c:\users\jibra\projects\dsa_assignment_3\main.cpp
+1638720954 source:c:\users\jibra\projects\dsa_assignment_3\main.cpp
 	<string>
 	<iostream>
 	"BST.h"
 	"BinaryTree.h"
 	"ExpressionTree.h"
 
-1638704534 c:\users\jibra\projects\dsa_assignment_3\include\bst.h
+1638720890 c:\users\jibra\projects\dsa_assignment_3\include\bst.h
+	"BinaryTree.h"
 
 1638708471 c:\users\jibra\projects\dsa_assignment_3\include\expressiontree.h
 	<BinaryTree.h>
@@ -32,7 +33,9 @@
 	"BST.cpp"
 	"BinaryTree.cpp"
 
-1638704534 c:\users\jibra\projects\dsa_assignment_3\src\bst.cpp
+1638720999 c:\users\jibra\projects\dsa_assignment_3\src\bst.cpp
+	"BST.h"
+	"BinaryTree.h"
 
 1638703892 c:\users\jibra\projects\dsa_assignment_3\src\binarytree.cpp
 	"BinaryTree.h"

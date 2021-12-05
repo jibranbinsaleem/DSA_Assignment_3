@@ -21,11 +21,11 @@ BST<Comparable>:: BST(BinaryNode<Comparable> *root) : BinaryTree<Comparable>(thi
 template <class Comparable>
 BST<Comparable>::~BST()
 {
-    BinaryTree::make_empty();
+    BinaryTree<Comparable>::make_empty();
 }
 
 template <class Comparable>
-void BST<Comparable>:: insert(const Comparable data, BinaryNode<Comparable>*& t) 
+void BST<Comparable>:: insert(const Comparable data, BinaryNode<Comparable>*& t)
 {
     if (t==NULL)
         t= (this->create_node(data));
