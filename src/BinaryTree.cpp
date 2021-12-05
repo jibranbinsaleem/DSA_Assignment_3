@@ -54,7 +54,7 @@ void BinaryTree<Comparable>::deleteTree(BinaryNode<Comparable>* root)
 {
     if (root==NULL)
         return;
-    
+
     //deleting the subtrees
     deleteTree(root->left);
     deleteTree(root->right);
@@ -103,7 +103,7 @@ BinaryNode<Comparable>* BinaryTree<Comparable>::create_node(Comparable x)
     BinaryNode<Comparable> *NewNode;
     NewNode = new BinaryNode<Comparable>;
     NewNode->element=x;
-    NewNode->left=node->right=NULL;
+    NewNode->left = NEWNode->right = NULL;
     return NewNode;
 }
 //____________________________________________
