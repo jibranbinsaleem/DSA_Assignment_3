@@ -11,7 +11,7 @@ class BST : public BinaryTree<Comparable>
         BST(BinaryNode<Comparable> *root);
         BST(const BST& t);
         ~BST();
-        //bool search(const Comparable data);
+        bool search(const Comparable data);
         BinaryNode<Comparable>* findMin() ;
         BinaryNode<Comparable>* findMax() ;
         virtual void insert(const Comparable data);
