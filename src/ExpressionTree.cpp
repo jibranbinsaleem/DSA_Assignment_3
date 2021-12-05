@@ -20,7 +20,7 @@ ExpressionTree::ExpressionTree(ExpTreeNodePtr data)
 }
 ExpressionTree::~ExpressionTree()
 {
-    BinaryTree::make_empty();
+//    BinaryTree::make_empty();
 }
 void ExpressionTree::create_expression_tree(string expression)
 {

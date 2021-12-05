@@ -21,7 +21,7 @@ BST<Comparable>:: BST(BinaryNode<Comparable> *root) : BinaryTree<Comparable>(thi
 template <class Comparable>
 BST<Comparable>::~BST()
 {
-    BinaryTree<Comparable>::make_empty();
+//    BinaryTree<Comparable>::make_empty();
 }
 
 template <class Comparable>
@@ -103,18 +103,19 @@ BinaryNode<Comparable>* BST<Comparable>:: findMax()
 }
 
 template <class Comparable>
-bool BST<Comparable>:: search(const Comparable data)  // Function for Checking wheather the Element is present or not
+bool BST<Comparable>:: search(const Comparable data)
 {
         contains(data, this->tree_root);
 }
 
 template <class Comparable>
-bool BST<Comparable>:: contains(const Comparable x, BinaryNode<Comparable>* tr) 
+bool BST<Comparable>:: contains(const Comparable x, BinaryNode<Comparable>* tr)
+{
     if( tr == nullptr )
         return false;
     else if( x < tr->element )
         return contains( x, tr->left );
-    else if( t->element < x )
+    else if( tr->element < x )
         return contains( x, tr->right );
     else
         return true;
