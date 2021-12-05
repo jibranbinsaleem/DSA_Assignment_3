@@ -26,7 +26,7 @@ class ExpressionTree : public BinaryTree<char>
 		ExpressionTree right();
 
     private:
-    	bool is_operator(char ch)
+    	bool is_operator(char ch);
 };
 
 #endif // EXPRESSIONTREE_H
