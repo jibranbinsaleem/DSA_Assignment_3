@@ -102,15 +102,20 @@ BinaryNode<Comparable>* BST<Comparable>:: findMax()
     findMax(this->tree_root);
 }
 
-/*template <class Comparable>
-bool BST<Comparable>:: search(const Comparable x)
+template <class Comparable>
+bool BST<Comparable>:: search(const Comparable data)  // Function for Checking wheather the Element is present or not
 {
-    if( this->tree_root == nullptr )
+        contains(data, this->tree_root);
+}
+
+template <class Comparable>
+bool BST<Comparable>:: contains(const Comparable x, BinaryNode<Comparable>* tr) 
+    if( tr == nullptr )
         return false;
-    else if( x < (this->tree_root)->element )
-        return search( x, (this->tree_root)->left );
-    else if( (this->tree_root)->element < x )
-        return search( x, (this->tree_root)->right );
+    else if( x < tr->element )
+        return contains( x, tr->left );
+    else if( t->element < x )
+        return contains( x, tr->right );
     else
         return true;
-}*/
+}
