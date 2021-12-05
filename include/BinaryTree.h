@@ -39,13 +39,13 @@ class BinaryTree
     protected:
         BinaryNode<Comparable>* create_node(Comparable data);
         BinaryNode<Comparable>* copyTree(BinaryNode<Comparable>* root);
-        BinaryNode<Comparable>* tree_root
+        BinaryNode<Comparable>* tree_root;
 
     private:
-        void traverse_inOrder(BinaryNode<Comparable>* root)
-        void traverse_preOrder(BinaryNode<Comparable>* root)
-        void traverse_postOrder(BinaryNode<Comparable>* root)
-        void deleteTree(BinaryNode<Comparable>* root)
+        void traverse_inOrder(BinaryNode<Comparable>* root);
+        void traverse_preOrder(BinaryNode<Comparable>* root);
+        void traverse_postOrder(BinaryNode<Comparable>* root);
+        void deleteTree(BinaryNode<Comparable>* root);
 };
 
 #endif // BINARYTREE_H
