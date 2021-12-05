@@ -21,6 +21,7 @@ class BST : public BinaryTree<Comparable>
         void remove(const Comparable data, BinaryNode<Comparable>*& root) ;
         BinaryNode<Comparable>* findMin(BinaryNode<Comparable> *root) ;
         BinaryNode<Comparable>* findMax(BinaryNode<Comparable> *root) ;
+        bool contains(const Comparable x, BinaryNode<Comparable>* t);
 };
 
 #endif // BST_H
