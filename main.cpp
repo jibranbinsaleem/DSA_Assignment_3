@@ -11,7 +11,9 @@ void test_expression_tree();
 void test_binary_search_tree();
 int main()
 {
-	test_binary_tree();
+
+    test_binary_tree();
+
 	test_expression_tree();
 	test_binary_search_tree();
 	return 0;
